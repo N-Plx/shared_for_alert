@@ -1,9 +1,10 @@
-package HelixModelExample;
+package helixmodelexample;
 import org.jlab.rec.cvt.trajectory.Helix;
 import cnuphys.magfield.MagneticFields;
 import org.jlab.clas.swimtools.MagFieldsEngine;
 import org.jlab.geom.prim.Point3D;
 import java.util.Random;
+import org.jlab.utils.CLASResources;
 
 /**
  * @file HelixModelExample.java
@@ -68,8 +69,7 @@ public class HelixModelExample {
     public static void main(String[] args) {
         
         System.setProperty("CLAS12DIR", "../../");
-        String mapDir = "/Users/npilleux/Desktop/alert/atof-reconstruction/coatjava/etc/data/magfield";
-
+        String mapDir = CLASResources.getResourcePath("etc")+"/data/magfield";
         try {
             MagneticFields.getInstance().initializeMagneticFields(mapDir,
                     "Symm_torus_r2501_phi16_z251_24Apr2018.dat","Symm_solenoid_r601_phi1_z1201_13June2018.dat");
