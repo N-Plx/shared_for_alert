@@ -1,4 +1,4 @@
-# example.groovy
+# Example script to use the geometry service: example.groovy
 On ifarm, load the standard clas12 environment or at least modules to use groovy.
 
 The code should be ran with CJ updated with the new geometry service. For now you can use:
@@ -9,10 +9,11 @@ It will produce a txt file to be read as you like.
 
 x_i,y_i,z_i are the coordinates for each of the 8 vertices ("corners") of each scintillator trapezoide.
 
-# run some simulations with the updated geometry
+# Run some simulations with the updated geometry
 Waiting for a release, on ifarm you can run some simple simulations
 
 > cd /w/hallb-scshelf2102/clas12/pilleux/alert/clas12Tags-5.10/source
+
 > ./gemc your_options
 
 Some first options to try: 
